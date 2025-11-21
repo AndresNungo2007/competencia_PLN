@@ -1,0 +1,604 @@
+[
+    {
+        "natural_language": "Hey! \ud83d\ude0a Espero que est\u00e9s bien. Quer\u00eda hacer un pedido, igual que la vez pasada que compr\u00e9 esos zapatitos chulos. Esta vez voy a necesitar unos 7 de esos Raspacallo freestyle anat\u00f3micos en foamy. Creo que estaban m\u00e1s o menos a 70 libras cada uno, o algo as\u00ed. \n\nAh, y por favor m\u00e1ndalos a mi direcci\u00f3n en Humbert, con el c\u00f3digo postal 71394. El lugar es 97, rue de Ramos... creo que es en Francia, \u00bfverdad? No te olvides de usar el env\u00edo est\u00e1ndar, pero me gustar\u00eda que llegaran antes del 29 de enero, si puedes. Pero bueno, si no se puede, no pasa nada, s\u00f3lo quiero que lleguen bien y no este fin de semana, porfa.\n\nSi necesitas llamarme, puedes hacerlo al 9979150460, aunque a veces no respondo porque... ya sabes c\u00f3mo es el trabajo, siempre ocupado. No dudes en escribirme al michael08@example.org o al otro correo, nrusso@example.org, por si acaso.\n\nGracias, \u00a1nos vemos! \ud83c\udf40",
+        "json_data": {
+            "buyer": {
+                "name": null,
+                "email": "michael08@example.org",
+                "contact": {
+                    "phone": "9979150460",
+                    "alt_email": "nrusso@example.org",
+                    "preferred_contact": null
+                },
+                "addresses": [
+                    {
+                        "street": "97, rue de Ramos",
+                        "city": "Humbert",
+                        "state": null,
+                        "postal_code": "71394",
+                        "country": "FR"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Raspacallo freestyle anat\u00f3mico en foamy",
+                    "quantity": 7,
+                    "currency": "GBP",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "standard",
+                "preferred_by": "2023-01-29T06:36:40"
+            }
+        }
+    },
+    {
+        "natural_language": "\u00a1Hola! \ud83d\ude0a Espero que est\u00e9s bien. Te escribo porque necesito hacer un pedido de un par de cositas, como la vez pasada. \n\nVoy a necesitar unas 7 unidades de yogur suave \ud83c\udf76. No estoy seguro de si ped\u00ed lo mismo la \u00faltima vez, pero creo que fue algo parecido. Tambi\u00e9n, me gustar\u00eda que incluyeras 4 limpiavidrios que sean dobles en su uso porque, la verdad, siempre viene bien tener un par extras en casa. Y, por \u00faltimo, quer\u00eda pedir como unos 10 huevos, de esos jumbo rojos. \ud83e\udd5a\n\nPor cierto, lo voy a necesitar bastante pronto, tipo expr\u00e9s, si es posible. Pero no creo que lo necesite para este fin de semana, as\u00ed que tal vez podr\u00eda llegar para el lunes o martes... eso ser\u00eda genial. \n\nLa direcci\u00f3n de entrega es en Pons, en una calle que se llama 8, rue Valentine Leli\u00e8vre, 41563 en Francia. Si tienes alguna duda, m\u00e1ndame un mensaje al correo que te pas\u00e9 antes, aunque prefiero que sea por tel\u00e9fono, si te parece bien.\n\nGracias por tu ayuda, \u00a1espero tu respuesta! \u00a1Ah! Y siga lloviendo como ayer, \u00bfno? \u2614\ufe0f Cu\u00eddame y hablamos pronto.",
+        "json_data": {
+            "buyer": {
+                "name": null,
+                "email": "vlewis@example.org",
+                "contact": {
+                    "phone": null,
+                    "alt_email": null,
+                    "preferred_contact": "phone"
+                },
+                "addresses": [
+                    {
+                        "street": "8, rue Valentine Leli\u00e8vre",
+                        "city": "Pons",
+                        "state": null,
+                        "postal_code": "41563",
+                        "country": "FR"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Yogurt sligth ",
+                    "quantity": 7,
+                    "currency": null,
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Limpiavidrios doble uso new andin",
+                    "quantity": 4,
+                    "currency": null,
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Huevo AA Jumbo Rojo ",
+                    "quantity": 10,
+                    "currency": "EUR",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "express",
+                "preferred_by": "2023-01-19T11:54:05"
+            }
+        }
+    },
+    {
+        "natural_language": "Asunto: Pedido de productos\n\nHola,\n\nEspero que est\u00e9s bien, \u00a1me imagino que has tenido una semana ocupada! Justo quer\u00eda repasar el pedido que te hice antes, \u00bfte acuerdas de esos esmaltes tan bonitos? Bueno, me gustar\u00eda pedir algunas cositas adicionales. As\u00ed que, en total, creo que son alrededor de dos frascos de un esmalte espec\u00edfico, el Vogue fantastic en plata espejo, que me encant\u00f3 la \u00faltima vez que lo prob\u00e9. Ojal\u00e1 puedas hacerme llegar esas dos unidades, por favor. \n\nPor otra parte, tambi\u00e9n a\u00f1ad\u00ed algunas delicias; me refiero al chocolate Lindt Lindor, esos cornet que tienen un sabor \u00fanico. Creo que la vez pasada ped\u00ed algunas por ah\u00ed, \u00bfser\u00edan unas 9 unidades m\u00e1s o menos? Son perfectos para compartir\u2026 o para no compartir \ud83d\ude04.\n\nMi direcci\u00f3n sigue siendo la misma, por si acaso: estoy en Urbanizaci\u00f3n de In\u00e9s Conesa 33, en Murcia, con el c\u00f3digo postal 38730. \n\nPor cierto, \u00bfpodr\u00edas enviarlo pronto? Pero no este fin de semana, tengo un par de cosas que hacer, as\u00ed que mejor la pr\u00f3xima semana. Eso s\u00ed, te agradecer\u00eda que me avises cuando lo env\u00edes.\n\nAh, y sobre el precio, si no me equivoco, deber\u00eda ser en d\u00f3lares, o eso es lo que recuerdo. Espero no haberme olvidado de nada importante, si necesitas preguntar algo m\u00e1s, ya sabes d\u00f3nde encontrarme.\n\n\u00a1Gracias de antemano!\n\nSaludos,\nJohn Wolfe  \njohn.wolfe@gmail.com  ",
+        "json_data": {
+            "buyer": {
+                "name": "John Wolfe",
+                "email": "john.wolfe@gmail.com",
+                "contact": null,
+                "addresses": [
+                    {
+                        "street": "Urbanizaci\u00f3n de In\u00e9s Conesa 33",
+                        "city": "Murcia",
+                        "state": null,
+                        "postal_code": "38730",
+                        "country": "ES"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Esmalte Vogue fantastic plata espejo ",
+                    "quantity": 2,
+                    "currency": "USD",
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Chocolate lindt lindor cornet ",
+                    "quantity": 9,
+                    "currency": null,
+                    "discount_code": null
+                }
+            ],
+            "shipping": null
+        }
+    },
+    {
+        "natural_language": "# Orden de Compra\n\n\u00a1Hola! El otro d\u00eda estaba pensando en lo mucho que me gust\u00f3 el \u00faltimo pedido que hice. Ayer estuvimos hablando de lo que deber\u00edamos comprar, especialmente algunos productos que disfrutamos mucho. En esta ocasi\u00f3n, nuevamente me decid\u00ed por algunas cositas interesantes.\n\n## Detalles del Comprador\n\nMi amigo, a quien le envi\u00e9 este pedido, se llama **Jorge Johnson**. Tiene un email que es jorge.johnson@hotmail.com. De repente, no tengo su n\u00famero de contacto, y tampoco recuerdo si me pas\u00f3 alguna direcci\u00f3n reciente. Pero bueno, eso no importa tanto, \u00bfverdad?\n\n## Productos Adquiridos\n\nHice algunas compras que espero que le gusten. La primera cosa que orden\u00e9 fue m\u00e1s o menos **5** labiales de una marca que se llama Vogue, esos de color mate l\u00edquido, creo que son de 5 ml. La verdad, son super geniales para cualquier ocasi\u00f3n, \u00a1tienen unos colores espectaculares!\n\nPor otro lado, tambi\u00e9n inclu\u00ed unas cuantas botellas de agua de coco natural de Adecoco, creo que ped\u00ed como aproximadamente **4**. Siempre es bueno mantenerse hidratado, especialmente cuando el clima est\u00e1 caluroso, \u00a1ya sabes! A veces pienso que deber\u00eda comprar m\u00e1s, como la vez pasada que me qued\u00e9 sin ellos demasiado r\u00e1pido. \n\n## Env\u00edo\n\nSobre el env\u00edo, no estoy seguro si ya hab\u00edan acordado algo, pero creo que no hay necesidad de hacer nada demasiado urgente, aunque... el tiempo sigue pasando. Quiz\u00e1s ser\u00eda mejor que lleguen pronto, pero no este fin de semana, ya que tengo algunas cosas planeadas. \n\nAs\u00ed que eso es todo por ahora. Espero que todo llegue en buen estado y a tiempo. Hasta la pr\u00f3xima, \u00a1un saludo! \ud83d\ude0a",
+        "json_data": {
+            "buyer": {
+                "name": "Jorge Johnson",
+                "email": "jorge.johnson@hotmail.com",
+                "contact": null,
+                "addresses": null
+            },
+            "purchases": [
+                {
+                    "product_name": "Labial Vogue Colorissimo karma mate l\u00edquido .x5ml",
+                    "quantity": 5,
+                    "currency": null,
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Agua a de coco natural Adecoco ",
+                    "quantity": 4,
+                    "currency": null,
+                    "discount_code": null
+                }
+            ],
+            "shipping": null
+        }
+    },
+    {
+        "natural_language": "Asunto: Solicitud de Pedido\n\nHola,\n\nEspero que te encuentres bien. Te escribo porque estoy interesado en realizar un pedido, como la vez pasada. Me gustar\u00eda obtener unas seis unidades del producto Brillo Manteca de Karit\u00e9 Vit\u00fa Fresa. Por cierto, esa vez el producto me encant\u00f3, aunque un amigo me dijo que podr\u00eda haberlo encontrado m\u00e1s barato, pero no me atrevo a cambiar de proveedor. La calidad de lo que vendes es de lo mejor, as\u00ed que prefiero seguir contigo.\n\nEn cuanto al precio, he estado pensando que ser\u00edan m\u00e1s o menos unas \u00a310 por cada unidad, \u00bfrecuerdas? As\u00ed que el total deber\u00eda estar alrededor de \u00a360\u2026 o algo as\u00ed. \n\nAdem\u00e1s, necesito que el env\u00edo sea r\u00e1pido, casi como un expr\u00e9s, si es posible, ya que me gustar\u00eda que llegara antes del 14 de enero, si no me equivoco. \n\nTe comparto las direcciones para la entrega, que son dos: una en Hoffmantown, 6636 Allen Manors (N9L2N9), y la otra es en East Stacytown, 4304 Rogers Extension (c\u00f3digo postal A4V2E1). Este \u00faltimo lugar ser\u00eda preferible si no hay inconvenientes. \n\nPor cierto, ayer llovi\u00f3 un mont\u00f3n aqu\u00ed, as\u00ed que espero que no est\u00e9 afectando el transporte. Por favor, m\u00e1ndame la confirmaci\u00f3n del pedido tan pronto como puedas, pero si puedes, no me lo env\u00edes este fin de semana, ya que estoy un poco ocupado.\n\nAgradezco de antemano tu atenci\u00f3n y quedo atento a tu respuesta.\n\nSaludos,\nJohn Gonzalez  \njohn.gonzalez@hotmail.com",
+        "json_data": {
+            "buyer": {
+                "name": "John Gonzalez",
+                "email": "john.gonzalez@hotmail.com",
+                "contact": null,
+                "addresses": [
+                    {
+                        "street": "6636 Allen Manors",
+                        "city": "Hoffmantown",
+                        "state": null,
+                        "postal_code": "N9L2N9",
+                        "country": "CA"
+                    },
+                    {
+                        "street": "4304 Rogers Extension",
+                        "city": "East Stacytown",
+                        "state": null,
+                        "postal_code": "A4V2E1",
+                        "country": "CA"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Brillo Manteca de Karit\u00e9 Vit\u00fa Fresa",
+                    "quantity": 6,
+                    "currency": "GBP",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "express",
+                "preferred_by": "2023-01-14T12:08:25"
+            }
+        }
+    },
+    {
+        "natural_language": "# Orden de Compra\n\n\u00a1Hola! Espero que est\u00e9s bien. Quer\u00eda comentarte sobre mi reciente pedido, que es un poco especial, como hace unas semanas. La verdad es que no puedo resistirme a esos dulces que tanto me gustan. \ud83d\ude0a  \n\n## Comprador\nLa informaci\u00f3n del comprador es la siguiente. Mi nombre es Katherine, por cierto, y te dejo mi correo para cualquier cosita: katherine_rowe@hotmail.com. Ah, y mi n\u00famero de tel\u00e9fono (no es el \u00fanico, pero es el que prefiero) es el que empieza con \"001\" seguido de 3487606932. Por si necesitas hablar conmigo directamente, claro.  \n\n### Contacto Alternativo\nA veces suelo usar el email de un amigo, stevenberger@example.com, ya que le gusta ayudar con los pedidos.  \n\n## Direcciones\nRespecto a la direcci\u00f3n de env\u00edo, tengo dos lugares donde puedo recibir mis cosas:\n\n1. **Primera direcci\u00f3n:**\n   - Calle: 76, rue de Louis  \n   - Ciudad: Lenoir  \n   - C\u00f3digo postal: 85103  \n   - Pa\u00eds: Francia \ud83c\uddeb\ud83c\uddf7  \n\n2. **Segunda direcci\u00f3n:**\n   - Calle: Gerlachstra\u00dfe 55  \n   - Ciudad: Quedlinburg  \n   - C\u00f3digo postal: 12374  \n   - Pa\u00eds: Alemania \ud83c\udde9\ud83c\uddea  \n\nElijo recibir aqu\u00ed si es posible: un lugar algo acogedor.\n\n## Productos Comprados\nAhora, sobre lo que he pedido. Estoy emocionada, \u00a1son unas delicias! He solicitado, m\u00e1s o menos, **dos** panelitas blandas de leche de Dulces Del Valle. Tienes que probarlas, son lo mejor. \ud83d\ude0b En cuanto a los precios, ni idea, pero seguro son accesibles.  \n\n## Env\u00edo\nEl env\u00edo lo podemos hacer r\u00e1pido, pero, te pido que no sea para este fin de semana, tengo algunos planes. Ayer llovi\u00f3 bastante, y me preocupaba que esto afectara las entregas, pero espero que todo est\u00e9 bien. Solo un poco de consideraci\u00f3n, por favor, ya sabes c\u00f3mo me gusta.  \n\nEspero que todo est\u00e9 claro. Esto es lo que tengo en mente, as\u00ed que espero tu confirmaci\u00f3n pronto. \u00a1Saludos!",
+        "json_data": {
+            "buyer": {
+                "name": "Katherine Rowe",
+                "email": "katherine_rowe@hotmail.com",
+                "contact": {
+                    "phone": "001-348-760-6932",
+                    "alt_email": "stevenberger@example.com",
+                    "preferred_contact": "phone"
+                },
+                "addresses": [
+                    {
+                        "street": "76, rue de Louis",
+                        "city": "Lenoir",
+                        "state": null,
+                        "postal_code": "85103",
+                        "country": "FR"
+                    },
+                    {
+                        "street": "Gerlachstra\u00dfe 55",
+                        "city": "Quedlinburg",
+                        "state": null,
+                        "postal_code": "12374",
+                        "country": "DE"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Panelita blanda de leche Dulces Del Valle ",
+                    "quantity": 2,
+                    "currency": null,
+                    "discount_code": null
+                }
+            ],
+            "shipping": null
+        }
+    },
+    {
+        "natural_language": "# Pedido de Compra de Janet\n\n\u00a1Hola! Espero que todo est\u00e9 genial por ah\u00ed. Quer\u00eda comentarte sobre mi \u00faltimo pedido. Soy **Janet Brown**, y como te lo dije antes, prefiero a veces contactarme por tel\u00e9fono \ud83d\udcde... aunque haya sido un poco complicado encontrar uno libre en casa. Te dejo el correo alternativo por si acaso: **zrichmond@example.net**.\n\nHablando de mi pedido, he decidido llevarme **nueve** unidades de una bolsa que me encant\u00f3: \"Rey Bolsa Condiachiote\". Me parece que quedan muy bien para mis cosas. El precio est\u00e1 bien, como a unas **\u00a39** cada una, si no recuerdo mal. \n\nEn cuanto a la entrega, opt\u00e9 por el m\u00e9todo **expr\u00e9s**, porque a veces me gusta recibir mis cosas r\u00e1pido, ya sabes, como la vez pasada que ped\u00ed y lleg\u00f3 casi al instante. Fue una experiencia bien chida! Pero, eh, ojo, no quiero que me lo env\u00eden justo este fin de semana, ya que tendr\u00e9 visitas. Mejor que llegue en cualquier otro momento.\n\nCambiando de tema, en mi casa en Rochlitz, donde estoy ahora, la direcci\u00f3n es **Seifertgasse 6/5**, postal **84245**, en **Alemania**. Aunque tambi\u00e9n tengo otra direcci\u00f3n en Francia: **avenue Martel**, en la ciudad de **Gimenez**, con el c\u00f3digo postal **53231**. A veces me confundo entre ambas, pero espero que no haya problema en esta ocasi\u00f3n.\n\nAyer llovi\u00f3 un mont\u00f3n y me qued\u00e9 en casa disfrutando de un buen libro, pero tambi\u00e9n pienso en todas esas compras. Si tienes alguna pregunta sobre mi pedido, por favor, h\u00e1zmelo saber.\n\n\u00a1Espero tu confirmaci\u00f3n pronto! \ud83d\ude0a \n\nHasta luego.",
+        "json_data": {
+            "buyer": {
+                "name": "Janet Brown",
+                "email": "janet_brown@gmail.com",
+                "contact": {
+                    "phone": null,
+                    "alt_email": "zrichmond@example.net",
+                    "preferred_contact": "phone"
+                },
+                "addresses": [
+                    {
+                        "street": "Seifertgasse 6/5",
+                        "city": "Rochlitz",
+                        "state": null,
+                        "postal_code": "84245",
+                        "country": "DE"
+                    },
+                    {
+                        "street": "avenue Martel",
+                        "city": "Gimenez",
+                        "state": null,
+                        "postal_code": "53231",
+                        "country": "FR"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Rey Bolsa Condiachiote ",
+                    "quantity": 9,
+                    "currency": "GBP",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "express",
+                "preferred_by": null
+            }
+        }
+    },
+    {
+        "natural_language": "Hey, \u00bfc\u00f3mo va todo? \ud83d\ude0a\n\nTe escribo porque estoy pensando en hacer un pedido de cosas ricas. Me gustar\u00eda conseguir como 8 paquetes de la Sazonarey Chapeta, el de El Rey, que, por cierto, es buen\u00edsimo. Y ya que estamos, tambi\u00e9n quiero unas 8 botellas de esa cerveza Sol que me hiciste probar la otra vez, creo que son como unos \u20ac2 por botella... no estoy segura. \n\nAh, y lo voy a recoger yo mismo, no quiero que me lo env\u00edes, as\u00ed que cualquier cosa me avisas. \n\nPor cierto, tengo unas direcciones para que me mandes el pedido, as\u00ed que no te preocupes. Uno es Cr. 12 # 1-46 Este en Sutatenza, Colombia (c\u00f3digo 524260) y la otra ser\u00eda en 78516 Duane Stravenue, West Laurafort, que es en Estados Unidos, aunque no s\u00e9 si tienes alguna preferencia para enviarlo... \ud83d\ude05 \n\nEspero que esta vez no pase como la \u00faltima vez que me tard\u00e9 una eternidad en recibirlo. Hablamos pronto, y gracias de antemano. \n\nCuidate! \ud83e\udd73",
+        "json_data": {
+            "buyer": {
+                "name": null,
+                "email": "fharris@example.net",
+                "contact": {
+                    "phone": "+1-487-213-6934",
+                    "alt_email": null,
+                    "preferred_contact": "email"
+                },
+                "addresses": [
+                    {
+                        "street": "Cr. 12 # 1-46 Este",
+                        "city": "Sutatenza",
+                        "state": null,
+                        "postal_code": "524260",
+                        "country": "CO"
+                    },
+                    {
+                        "street": "78516 Duane Stravenue",
+                        "city": "West Laurafort",
+                        "state": "MH",
+                        "postal_code": "82729",
+                        "country": "US"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Sazonarey Chapeta 55g - El Rey",
+                    "quantity": 8,
+                    "currency": null,
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Cerveza Sol botella ",
+                    "quantity": 8,
+                    "currency": "EUR",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "pickup",
+                "preferred_by": null
+            }
+        }
+    },
+    {
+        "natural_language": "Asunto: Pedido de productos\n\nHola,\n\nEspero que te encuentres muy bien. Quer\u00eda hacer un pedido que estoy pensando desde hace tiempo, m\u00e1s o menos como la vez pasada que ped\u00ed. Estoy un poco ocupada, pero seguro que no te va a costar mucho atender este pedido. \n\nPara comenzar, necesitar\u00eda una unidad de ese delicioso queso mozarella tajado de Alpina, que recuerdo estaba bien rico. Adem\u00e1s, me gustar\u00eda agregar unas cuatro salchichas de perro caliente Zen\u00fa, que son las que me encantan. Me parece que la primera vez ped\u00ed algunas de esas, y fueron un \u00e9xito. \n\nPor cierto, en cuanto a la moneda, creo que el queso lo cotizaste en libras, as\u00ed que no hay problema; y en cuanto a las salchichas, por lo que vi, ser\u00eda en d\u00f3lares, as\u00ed que todo correcto. \n\nSi pudieras darme una idea de c\u00f3mo ir\u00eda la entrega, ser\u00eda genial. No quiero que me lo env\u00edes este fin de semana porque probablemente no estar\u00e9 en casa, pero prefiero que sea pronto, por favor. Puedo ser contactada al n\u00famero que ya tienes, (458) 567-6194, aunque si quieres, puedes enviarme un correo tambi\u00e9n a mi direcci\u00f3n, que es erika31@example.org. \n\nAh, y para no olvidarme, el clima hace unos d\u00edas estuvo un poco raro, como que ayer llovi\u00f3 un mont\u00f3n, \u00bfverdad? Espero que eso no afecte el env\u00edo. \n\nGracias de antemano por tu ayuda. Hablamos pronto. \n\nUn saludo,  \nErika",
+        "json_data": {
+            "buyer": {
+                "name": null,
+                "email": "erika31@example.org",
+                "contact": {
+                    "phone": "(458)567-6194",
+                    "alt_email": null,
+                    "preferred_contact": "phone"
+                },
+                "addresses": null
+            },
+            "purchases": [
+                {
+                    "product_name": "Queso mozarella tajado Alpina ",
+                    "quantity": 1,
+                    "currency": "GBP",
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Salchicha Perro Caliente Zen\u00fa ",
+                    "quantity": 4,
+                    "currency": "USD",
+                    "discount_code": null
+                }
+            ],
+            "shipping": null
+        }
+    },
+    {
+        "natural_language": "Asunto: Pedido de compra\n\nHola equipo,\n\nEspero que est\u00e9n muy bien. Les escribo hoy desde una direcci\u00f3n que ya conoc\u00e9s, espec\u00edficamente, en Casabianca, donde el c\u00f3digo postal es el 882329, aunque tambi\u00e9n tengo una direcci\u00f3n en Alemania, en Backnang, que es Seidelring 54-35, por si necesitan enviarlo all\u00ed m\u00e1s adelante. \n\nAprovecho para hacer un pedido como el que hice el mes pasado, que lleg\u00f3 bien, gracias por eso. En esta ocasi\u00f3n, me gustar\u00eda solicitar unos art\u00edculos que no pueden faltar en mi casa. \n\nEn cuanto a los detalles, quiero pedir alrededor de 8 ambientadores, espec\u00edficamente el de vainilla seducci\u00f3n, que es un must para m\u00ed. Ah, y no se me olvida el removedor de Vogue, pero esta vez necesito unas 10 unidades de ese, las que tienen s\u00e1bila y caramidas, que son simplemente estupendas. \n\nSobre el tema de env\u00edos, me gustar\u00eda que se organizara una recogida del pedido, no estoy muy apurado, pero si pudieran tenerlo listo para el 21 de enero ser\u00eda perfecto. Tal vez no este fin de semana, ya que tengo algunos planes y no estoy seguro de poder coordinarlo en ese tiempo, pero mejor si lo tienen listo, \u00bfno? \n\nPor \u00faltimo, en t\u00e9rminos de precios, debemos hablar de libras y euros, exactamente 8 libras para los ambientadores y en euros para los removedores, que suelen ser algo m\u00e1s caros, \u00bfverdad? \n\nSi necesitan algo m\u00e1s de mi parte, no duden en escribirme al email o tambi\u00e9n pueden usar el n\u00famero +1-837-616-3654, aunque estoy m\u00e1s acostumbrado a mirar el correo.\n\nGracias mil por su atenci\u00f3n y espero su respuesta pronto. \n\nUn gran saludo,  \nBryan Anderson  \nbryan_anderson@gmail.com",
+        "json_data": {
+            "buyer": {
+                "name": "Bryan Anderson",
+                "email": "bryan_anderson@gmail.com",
+                "contact": {
+                    "phone": "+1-837-616-3654",
+                    "alt_email": "ttaylor@example.org",
+                    "preferred_contact": null
+                },
+                "addresses": [
+                    {
+                        "street": "Carrera 80 # 3-1 Este",
+                        "city": "Casabianca",
+                        "state": null,
+                        "postal_code": "882329",
+                        "country": "CO"
+                    },
+                    {
+                        "street": "Seidelring 54-35",
+                        "city": "Backnang",
+                        "state": null,
+                        "postal_code": "70751",
+                        "country": "DE"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Ambientador Bonaire vainilla seducci\u00f3n + repuesto ",
+                    "quantity": 8,
+                    "currency": "GBP",
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Removedor Vogue s\u00e1bila caramidas ",
+                    "quantity": 10,
+                    "currency": "EUR",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "pickup",
+                "preferred_by": "2023-01-21T06:46:06"
+            }
+        }
+    },
+    {
+        "natural_language": "Hola! \ud83d\ude04 Espero que est\u00e9s bien. Quer\u00eda hacer un pedido de unas cosas ricas que me han gustado mucho. \u00bfTe acuerdas de mi anterior compra? Bueno, ahora quiero pedir m\u00e1s, un poquito diferente. \n\nPrimero, me gustar\u00eda que me mandes unos 10 yogures de colanta de fresa, me encantan! \ud83c\udf53 Adem\u00e1s, necesito un par de quesillos, creo que con 2 estar\u00eda bien. Y no puedo olvidarme de la crema de leche Nestl\u00e9 en ese formato Doypack, m\u00e1s o menos unos 10 paquetitos de esos, pero en euros, porque me gusta m\u00e1s el precio \ud83d\ude05.\n\nAh, y ser\u00eda genial si pudieras hacer el env\u00edo lo m\u00e1s r\u00e1pido posible, tipo expr\u00e9s, pero no me lo mandes este fin de semana, ya sabes c\u00f3mo se pone todo \ud83e\udd74. Estoy en Ashleystad, en la direcci\u00f3n 17857 Moore Unions Suite 783, GU 97650. Espero que no te compliques con eso.\n\nPor cierto, no s\u00e9 si me dar\u00edas un adelanto de cu\u00e1nto saldr\u00eda todo, pero como siempre, quiero lo mejor, supongo que un precio justo, no? \ud83d\ude02 Bueno, espero tu respuesta, cu\u00eddate! \u270c\ufe0f",
+        "json_data": {
+            "buyer": {
+                "name": "Regina Daniels",
+                "email": "regina_daniels@hotmail.com",
+                "contact": {
+                    "phone": null,
+                    "alt_email": null,
+                    "preferred_contact": null
+                },
+                "addresses": [
+                    {
+                        "street": "17857 Moore Unions Suite 783",
+                        "city": "Ashleystad",
+                        "state": "GU",
+                        "postal_code": "97650",
+                        "country": "US"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Yogur colanta griego fresa ",
+                    "quantity": 10,
+                    "currency": null,
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Quesillo ",
+                    "quantity": 2,
+                    "currency": "USD",
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Crema de Leche Nestl\u00e9 Doypack ",
+                    "quantity": 10,
+                    "currency": "EUR",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "express",
+                "preferred_by": "2023-01-27T09:57:37"
+            }
+        }
+    },
+    {
+        "natural_language": "Asunto: Pedido de productos\n\nHola,\n\nEspero que te encuentres muy bien. Estoy escribiendo para hacer un pedido que he estado considerando desde hace un tiempo. Como la vez pasada, creo que querr\u00e9 unos productos que me han encantado y que definitivamente necesito en mi hogar.\n\nPrimero que nada, estoy interesado en una unidad de la Mezcla de salsa bolo\u00f1esa de Knorr, que es justo lo que me gusta para preparar esos platos. Ayer, de hecho, estaba pensando en ello mientras llov\u00eda aqu\u00ed en New Jane, como en esos d\u00edas nublados que invitan a una buena comida.\n\nAdem\u00e1s, me gustar\u00eda pedir un total de diez botellas, o mejor dicho, unas diez, de leche de soya natural. Esta vez me gustar\u00eda que fueran en euros, como el pedido que hice anteriormente. Recuerdo que esas botellas son las que me mantienen despierto por las ma\u00f1anas, \u00a1una maravilla! \n\nPor otro lado, he decidido agregar unos pa\u00f1os hogare\u00f1os multiusos, algo que quiz\u00e1s haga falta. Pienso en cinco de ellos, tal como la promoci\u00f3n que dice \u201cpague 6 lleve 12\u201d, aunque en realidad solo necesito unos 5 para empezar. Pero no me malinterpretes, la oferta se ve atractiva, \u00bfno?\n\nEn cuanto al env\u00edo, ser\u00eda genial si pudieras procesar esto como lo hiciste antes, con un m\u00e9todo r\u00e1pido, preferiblemente expr\u00e9s, porque, la verdad, no puedo esperar a probar el nuevo sabor de la salsa.\n\nPor favor, m\u00e1ndenme el pedido a mi direcci\u00f3n. Es un poco complicado dar los detalles, pero estoy en 3 Murphy walks, en New Jane, con el c\u00f3digo postal HD32 9XF, en Gran Breta\u00f1a. Ah, y tambi\u00e9n mi correo para cualquier seguimiento es ogarcia@example.org, aunque supongo que ya lo tienes.\n\nApreciar\u00eda que pudieran enviarlo pronto, pero no este fin de semana ya que tengo algunos planes. \n\nEspero tu respuesta. \u00a1Gracias de antemano!\n\nSaludos,  \nO Garc\u00eda",
+        "json_data": {
+            "buyer": {
+                "name": null,
+                "email": "ogarcia@example.org",
+                "contact": null,
+                "addresses": [
+                    {
+                        "street": "3 Murphy walks",
+                        "city": "New Jane",
+                        "state": null,
+                        "postal_code": "HD32 9XF",
+                        "country": "GB"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Mezcla de salsa bolo\u00f1esa Knorr ",
+                    "quantity": 1,
+                    "currency": "GBP",
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Leche de soya natural ",
+                    "quantity": 10,
+                    "currency": "EUR",
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Pa\u00f1o hogare\u00f1o multiusos Eterna pague 6 lleve 12.",
+                    "quantity": 5,
+                    "currency": "EUR",
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "express",
+                "preferred_by": null
+            }
+        }
+    },
+    {
+        "natural_language": "Hola, \u00bfqu\u00e9 tal? \ud83d\ude0a Espero que todo est\u00e9 bien por ah\u00ed. Quer\u00eda hacer un pedido de algunas cosas que me encantan. La \u00faltima vez que compr\u00e9 el yogur Deja Mu natural de frutos del bosque\u2026 me pareci\u00f3 que ven\u00eda un mont\u00f3n, creo que eran como unas 9 tarrinas, est\u00e1n tan ricas que nunca son demasiadas, \u00bfno? \n\nTambi\u00e9n voy a necesitar un par de botellas de la ginebra Monkey 47, creo que 2 estar\u00eda bien. Ya sabes, para alguna reuni\u00f3n con amigos, que se viene el buen tiempo y hay que celebrarlo. \ud83c\udf79\n\nPor cierto, deber\u00edas enviarlo a la Glorieta Juan Carlos Isern, que es donde estoy ahora, en Cantabria, el c\u00f3digo postal es ese raro, el 32982. A veces pienso que deber\u00eda irme a Guadalajara, donde tambi\u00e9n tengo un lugar, en la C. Adelaida Tom\u00e1s, aunque el cp ah\u00ed es 04613. Pero en fin, mejor este pedido a mi direcci\u00f3n actual.\n\nSi pudieras hacerlo pronto, ser\u00eda genial, pero no este fin de semana, ya sabes que a veces las cosas se complican. Y el precio, que creo era en euros, algo as\u00ed como 9 por el yogur y un precio decente por la ginebra, no me acuerdo la cantidad exacta, pero seguro puedes verlo. \n\nAh, y si necesitas contactarme, puedes hacerlo al 001-587-226-4574, es un tel\u00e9fono un poco raro, ja, ja. Tambi\u00e9n tengo un correo, es alison_martinez@hotmail.com, pero a veces se me llena de spam, as\u00ed que mejor ll\u00e1mame. \n\nGracias mil, \u00a1hablamos pronto! \ud83d\ude04",
+        "json_data": {
+            "buyer": {
+                "name": "Alison Martinez",
+                "email": "alison_martinez@hotmail.com",
+                "contact": {
+                    "phone": "001-587-226-4574x959",
+                    "alt_email": "jessicahoward@example.net",
+                    "preferred_contact": null
+                },
+                "addresses": [
+                    {
+                        "street": "Glorieta Juan Carlos Isern 533",
+                        "city": "Cantabria",
+                        "state": null,
+                        "postal_code": "32982",
+                        "country": "ES"
+                    },
+                    {
+                        "street": "C. Adelaida Tom\u00e1s 56",
+                        "city": "Guadalajara",
+                        "state": null,
+                        "postal_code": "04613",
+                        "country": "ES"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Yoghurt Deja Mu natural frutos bosque ",
+                    "quantity": 9,
+                    "currency": "EUR",
+                    "discount_code": null
+                },
+                {
+                    "product_name": "Ginebra Monkey 47 ",
+                    "quantity": 2,
+                    "currency": "EUR",
+                    "discount_code": null
+                }
+            ],
+            "shipping": null
+        }
+    },
+    {
+        "natural_language": "Asunto: Consulta sobre pedido\n\nEstimado proveedor,\n\nEspero que se encuentren muy bien. Mi nombre es [nombre del cliente], y me gustar\u00eda hacer una consulta r\u00e1pida respecto a algunos productos que estoy interesado en adquirir. Hace un par de d\u00edas, estuve revisando algunas opciones y creo que ser\u00eda adecuado repetir un pedido similar al que hice anteriormente. \n\nEn concreto, tengo inter\u00e9s en unos productos de limpieza que son bastante buenos, en especial el Clorox que deja los blancos s\u00faper intensos. Estoy pensando en pedir m\u00e1s o menos una unidad de ese producto para probar si el resultado es el mismo que la \u00faltima vez. Ser\u00eda genial si pudieran gestionarlo.\n\nAdem\u00e1s, les agradecer\u00eda si pudieran enviarlo a tres direcciones diferentes, como hicimos antes. La primera es en Espa\u00f1a: Plaza de Pastor Solano, n\u00famero 166, en la ciudad de Murcia, con el c\u00f3digo postal 22957. Tambi\u00e9n necesitar\u00eda que env\u00eden algo a Colombia, espec\u00edficamente a la Calle 143 Bis V # 34-63 Este en Tocancip\u00e1, con el c\u00f3digo 547434. Y la \u00faltima direcci\u00f3n es Urbanizaci\u00f3n Eutimio Tudela 45, en Zaragoza, Espa\u00f1a, c\u00f3digo postal 35063. \n\nPor favor, no se preocupen demasiado por el env\u00edo, solo que llegue bien. Si pudiera ser un env\u00edo expr\u00e9s, ser\u00eda perfecto, pero tampoco quiero que lo env\u00eden durante este fin de semana porque tengo otros compromisos. Si cuentan con alg\u00fan descuento, ser\u00eda tambi\u00e9n un placer aplicar eso, aunque no s\u00e9 si hab\u00eda alguno vigente en este momento.\n\nAyer, hablamos sobre el clima y estaba lloviendo, as\u00ed que espero que no haya retrasos en el transporte. Si tienen alg\u00fan comentario o necesitan m\u00e1s informaci\u00f3n, no duden en dec\u00edrmelo. Espero su pronta respuesta.\n\nSaludos cordiales,\n\n[nombre del cliente]  \n[email del cliente]  \n[n\u00famero de contacto del cliente]",
+        "json_data": {
+            "buyer": {
+                "name": null,
+                "email": null,
+                "contact": null,
+                "addresses": [
+                    {
+                        "street": "Plaza de Pastor Solano 166",
+                        "city": "Murcia",
+                        "state": null,
+                        "postal_code": "22957",
+                        "country": "ES"
+                    },
+                    {
+                        "street": "Calle 143 Bis V # 34-63 Este",
+                        "city": "Tocancip\u00e1",
+                        "state": null,
+                        "postal_code": "547434",
+                        "country": "CO"
+                    },
+                    {
+                        "street": "Urbanizaci\u00f3n Eutimio Tudela 45",
+                        "city": "Zaragoza",
+                        "state": null,
+                        "postal_code": "35063",
+                        "country": "ES"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Clorox Blancos Intensos ",
+                    "quantity": 1,
+                    "currency": null,
+                    "discount_code": null
+                }
+            ],
+            "shipping": null
+        }
+    },
+    {
+        "natural_language": "Asunto: Pedido de Sorrentinos\n\nHola,\n\nEspero que te encuentres bien. Quer\u00eda hacer un pedido similar al de la \u00faltima vez que hice, en especial porque me acord\u00e9 de lo deliciosos que son. En esta ocasi\u00f3n, estoy interesada en comprar unos seis paquetitos de los sorrentinos Avanti de ricotta y espinaca. La verdad es que son un manjar, \u00a1no hay nada como ellos! \n\nDicho esto, me gustar\u00eda que la entrega se gestionara por medio del servicio est\u00e1ndar, ya que, bueno, no tengo prisa. Ser\u00eda genial si el pedido pudiera estar aqu\u00ed, m\u00e1s o menos, para el 2 de enero, si todo marcha bien. \n\nPor cierto, te comparto mis direcciones de env\u00edo, solo por si acaso: puedes enviar el paquete a mi casa en Callej\u00f3n de Nayara Tena 57, en Albacete, o si prefieres, a la otra que tengo en Via Paulina Atienza 146, en Zamora. Cualquiera de las dos me viene bien. \n\nAh, y no te olvides, que me gustar\u00eda que el paquete llegara sin problemas; como la \u00faltima vez, no quiero tener sorpresas desagradables. Si hay alg\u00fan c\u00f3digo o algo as\u00ed que pueda ayudar con el pedido, por favor, h\u00e1zmelo saber.\n\nGracias de antemano por tu ayuda. \u00a1Espero tu respuesta pronto!\n\nUn saludo,\n\nKelly Rodriguez  \nkelly.rodriguez@gmail.com  ",
+        "json_data": {
+            "buyer": {
+                "name": "Kelly Rodriguez",
+                "email": "kelly.rodriguez@gmail.com",
+                "contact": null,
+                "addresses": [
+                    {
+                        "street": "Callej\u00f3n de Nayara Tena 57",
+                        "city": "Albacete",
+                        "state": null,
+                        "postal_code": "02899",
+                        "country": "ES"
+                    },
+                    {
+                        "street": "Via Paulina Atienza 146",
+                        "city": "Zamora",
+                        "state": null,
+                        "postal_code": "43832",
+                        "country": "ES"
+                    }
+                ]
+            },
+            "purchases": [
+                {
+                    "product_name": "Sorrentinos Avanti ricotta espinaca ",
+                    "quantity": 6,
+                    "currency": null,
+                    "discount_code": null
+                }
+            ],
+            "shipping": {
+                "method": "standard",
+                "preferred_by": "2023-01-02T16:46:15"
+            }
+        }
+    }
+]

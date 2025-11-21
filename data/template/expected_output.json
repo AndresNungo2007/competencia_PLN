@@ -1,0 +1,32 @@
+{
+  "buyer": {
+    "name": "string?",
+    "email": "string?",
+    "contact": {
+      "phone": "string?",
+      "alt_email": "string?",
+      "preferred_contact": "email | phone | none"
+    },
+    "addresses": [
+      {
+        "street": "string",
+        "city": "string",
+        "state": "string?",
+        "postal_code": "string?",
+        "country": "US | CA | GB | ES | CO | DE | FR"
+      }
+    ]
+  },
+  "purchases": [
+    {
+      "product_name": "string",
+      "quantity": "integer",
+      "currency": "USD | EUR | GBP",
+      "discount_code": "string?"
+    }
+  ],
+  "shipping": {
+    "method": "standard | express | pickup",
+    "preferred_by": "datetime?"
+  }
+}
