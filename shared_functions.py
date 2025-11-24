@@ -15,6 +15,9 @@ def build_prompt(natural_text: str) -> str:
         "- Si purchases está vacío o no existe -> \"purchases\": null.\n"
         "- shipping es opcional; si falta -> \"shipping\": null.\n"
         "- Asegura que los tipos de datos principales sean correctos (quantity: entero; country uno de US/CA/GB/ES/CO/DE/FR).\n\n"
+        "- Use null cuando no tengas información, y que NO inventes correos, teléfonos o códigos de descuento si no aparecen.\n"
+        "- Respeta exactamente los nombres de los campos del esquema.\n"
+        "- Estructura el problema paso a paso, razona por etapas.\n"
     )
     prompt = instructions + "Texto:\n" + natural_text + "\n\nRESPONDE SOLO CON EL JSON VÁLIDO (nada más):\nJSON:\n"
     return prompt
@@ -27,8 +30,8 @@ def build_training_example(example: Dict[str, Any]) -> str:
     return prompt + target_json
 
 # Tokenización (precompuesta) y construcción de datasets de tensores
-def tokenize_example_textpair(textpair: str, max_length: int, tokenizer: AutoTokenizer):
-    enc = tokenizer(textpair, truncation=True, max_length=max_length, padding='max_length', return_tensors='pt') # todo: padding=False para probar, add_special_tokens=True
+def tokenize_example_textpair(textpair: str, max_length: int, tokenizer: AutoTokenizer, padding = 'max_length'):
+    enc = tokenizer(textpair, truncation=True, max_length=max_length, padding= padding, return_tensors='pt') # todo: padding=False para probar, add_special_tokens=True
     labels = enc['input_ids'].clone()
     labels[labels == tokenizer.pad_token_id] = -100
     return {'input_ids': enc['input_ids'].squeeze(0), 'attention_mask': enc['attention_mask'].squeeze(0), 'labels': labels.squeeze(0)}
