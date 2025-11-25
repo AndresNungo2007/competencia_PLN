@@ -1,0 +1,203 @@
+================================================================================
+INSTRUCCIONES DE EJECUCIÓN - COMPETENCIA PLN SEMANA 8
+================================================================================
+
+PROYECTO: Sistema de Canonicalización de Pedidos de Compra
+MODELO BASE: Qwen/Qwen3-0.6B-Base
+TÉCNICA: Fine-tuning con LoRA (Low-Rank Adaptation)
+
+================================================================================
+1. REQUISITOS DEL SISTEMA
+================================================================================
+
+- Python 3.13.5 (o superior a 3.10)
+- CUDA 11.8+ (para GPU)
+- GPU con al menos 8GB de VRAM (recomendado: 12GB+)
+- Conexión a internet para descargar el modelo base
+
+NOTA: Este proyecto fue desarrollado y probado en Google Colab con GPU T4.
+
+================================================================================
+2. INSTALACIÓN DE DEPENDENCIAS
+================================================================================
+
+Instalar todas las librerías necesarias:
+
+    pip install -r requirements.txt
+
+IMPORTANTE: Si usas Google Colab o Coursera GPUs, las siguientes librerías
+ya están preinstaladas:
+    - torch, transformers, datasets, peft, bitsandbytes
+
+================================================================================
+3. ESTRUCTURA DE ARCHIVOS
+================================================================================
+
+El proyecto debe tener la siguiente estructura:
+
+competencia_PLN-jose/
+├── train.ipynb              # Entrenamiento del modelo
+├── evaluation.ipynb         # Evaluación en test.json (PENDIENTE DE AJUSTAR)
+├── eval.ipynb              # Evaluación actual (usar hasta renombrar)
+├── open-evaluation.ipynb   # Consultas abiertas en lenguaje natural
+├── weights.pt              # Pesos del modelo entrenado (se genera tras entrenamiento)
+├── requirements.txt        # Dependencias del proyecto
+├── instrucciones.txt       # Este archivo
+├── shared_functions.py     # Funciones compartidas
+├── evaluation_metric.py    # Métrica de evaluación (provista por el curso)
+├── data/
+│   ├── train/             # Archivos JSON de entrenamiento
+│   ├── eval/              # Archivo eval.json (datos de prueba)
+│   └── template/          # expected_output.json
+└── output/
+    └── results/v01/
+        └── modfinal/      # Modelo y adaptadores LoRA guardados
+
+================================================================================
+4. EJECUCIÓN PASO A PASO
+================================================================================
+
+PASO 1: ENTRENAMIENTO (train.ipynb)
+------------------------------------
+
+Ejecutar TODAS las celdas del notebook train.ipynb en orden:
+
+1. Carga de datos desde data/train/
+2. Configuración del modelo Qwen3-0.6B-Base
+3. Fine-tuning con LoRA (5 épocas, aproximadamente 4 horas)
+4. Guardado de pesos en output/results/v01/modfinal/
+
+IMPORTANTE: 
+- El entrenamiento genera el archivo weights.pt en output/results/v01/modfinal/
+- Después de ejecutar train.ipynb, COPIAR MANUALMENTE weights.pt a la raíz:
+  
+  cp output/results/v01/modfinal/weights.pt ./weights.pt
+
+CONFIGURACIÓN CLAVE:
+- MAX_LENGTH: 1252 tokens
+- GEN_MAX_NEW_TOKENS: 377 tokens
+- BATCH_SIZE: 2
+- GRAD_ACCUM_STEPS: 6
+- EPOCHS: 5
+- LEARNING_RATE: 1e-4
+- LORA_R: 32, LORA_ALPHA: 64
+
+Tiempo estimado: ~4 horas en GPU T4 de Google Colab
+
+
+PASO 2: EVALUACIÓN EN DATOS DE TEST (eval.ipynb)
+------------------------------------------------
+
+NOTA: El notebook actual se llama "eval.ipynb" pero debería renombrarse
+a "evaluation.ipynb" para la entrega final.
+
+Ejecutar TODAS las celdas del notebook eval.ipynb:
+
+1. Carga del modelo entrenado desde output/results/v01/modfinal/
+2. Lectura de data/eval/eval.json (o test.json en la versión final)
+3. Generación de predicciones para cada registro
+4. Guardado de submission.csv en output/results/v01/csvfinal/
+
+Tiempo estimado: ~30-45 minutos para 1000 ejemplos
+
+
+PASO 3: CONSULTA ABIERTA (open-evaluation.ipynb)
+------------------------------------------------
+
+Este notebook permite hacer consultas abiertas en lenguaje natural:
+
+1. Carga del modelo entrenado
+2. Función generar_orden_compra() para convertir texto a JSON
+3. Ejemplos de uso con diferentes tipos de pedidos
+4. Sección interactiva para consultas personalizadas
+
+Uso:
+- Ejecutar las primeras celdas para cargar el modelo
+- Modificar el texto de entrada en las celdas de ejemplo
+- Ejecutar para obtener el JSON generado
+
+Tiempo estimado: Carga inicial ~2 min, consultas ~5-10 seg cada una
+
+================================================================================
+5. ARCHIVOS DE SALIDA
+================================================================================
+
+Después de ejecutar los notebooks, se generan:
+
+1. output/results/v01/modfinal/
+   - adapter_config.json
+   - adapter_model.safetensors
+   - weights.pt (COPIAR A LA RAÍZ)
+   
+2. output/results/v01/csvfinal/
+   - submission.csv (formato para Kaggle)
+   - submission.json
+   - submission_2.json
+   
+3. output/results/v01/result_validation/
+   - validation_results.csv
+   - f1_distribution.png
+
+================================================================================
+6. FORMATO DE ENTREGA
+================================================================================
+
+Para la entrega a Kaggle, usar el archivo:
+    output/results/v01/csvfinal/submission.csv
+
+Formato requerido:
+    id,prediction
+    0,"{""buyer"": {""name"": ""...""", ...}}"
+    1,"{""buyer"": {""name"": ""...""", ...}}"
+    ...
+
+IMPORTANTE:
+- La columna prediction debe contener JSON válido como STRING
+- Si el JSON no es válido, la métrica asignará 0 puntos
+- El orden de elementos dentro de listas [] NO afecta la puntuación
+
+================================================================================
+7. SOLUCIÓN DE PROBLEMAS COMUNES
+================================================================================
+
+Problema: "CUDA out of memory"
+Solución: Reducir BATCH_SIZE a 1 o aumentar GRAD_ACCUM_STEPS
+
+Problema: "No module named 'peft'"
+Solución: pip install peft==0.17.1
+
+Problema: "weights.pt not found"
+Solución: Copiar manualmente desde output/results/v01/modfinal/ a raíz
+
+Problema: "JSON inválido en predicción"
+Solución: Verificar que GEN_MAX_NEW_TOKENS sea suficiente (377 tokens)
+
+Problema: "F1 scores muy bajos"
+Solución: 
+  - Verificar que se use el modelo entrenado (no el base)
+  - Revisar que MAX_LENGTH y GEN_MAX_NEW_TOKENS sean correctos
+  - Asegurar que el prompt sea idéntico al usado en entrenamiento
+
+================================================================================
+8. NOTAS ADICIONALES
+================================================================================
+
+- El modelo usa cuantización 4-bit (nf4) para reducir uso de memoria
+- Los adaptadores LoRA representan solo ~1.5% de parámetros entrenables
+- El promedio de F1 score en validación es ~0.75-0.85
+- El tiempo de inferencia es ~5-10 segundos por ejemplo
+
+================================================================================
+9. CONTACTO Y SOPORTE
+================================================================================
+
+Para problemas o dudas sobre el código:
+- Revisar los comentarios en los notebooks
+- Verificar que todas las rutas de archivos sean correctas
+- Asegurar que la versión de Python y librerías coincidan
+
+================================================================================
+ÚLTIMA ACTUALIZACIÓN: 24 de noviembre de 2025
+================================================================================
+
+
