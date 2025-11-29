@@ -3,6 +3,7 @@ import json
 from copy import deepcopy
 from json import JSONDecodeError
 from typing import Literal
+import pandas as pd
 
 from pydantic import BaseModel
 
@@ -119,30 +120,38 @@ def evaluate_json(expected_json: JSON_TYPES, predicted_json_str: str) -> float:
     return metrics.f1_score()
 
 
-def main():
-    expected_json = {
-        'purchases': [
-            {
-                'product_name': 'Antitranspirante .Rexona Motionsense Antibacterial Roll Onx50ml',
-                'units': 3
-            },
-            {
-                "product_name": "Rey Bolsa Clavo Pepa ",
-                "units": 9
-            },
-            {
-                "product_name": "Chocolates Witors selecci\u00f3n especial ",
-                "units": 6
-            }
-        ],
-        'buyer': {'name': 'Laura Mueller', 'email': None}
-    }
-    predicted_json = deepcopy(expected_json)
-    predicted_json['buyer'] = []
+def score(solution: pd.DataFrame, submission: pd.DataFrame) -> float:
+    """
+    Calculate the mean score of predictions made in a submission against the ground truth solution.
 
-    metrics = json_match_metrics(expected_json, predicted_json)
-    print(metrics)
-    print(metrics.f1_score(key_weight=1, field_weight=1))
+    The function takes a ground truth DataFrame and a submission DataFrame, merges them using the "id" column,
+    and computes a score for each row by applying the evaluation function to the true answers
+    and the predicted values. The average of all scores is returned.
+
+    Parameters:
+    solution : pd.DataFrame
+        A DataFrame containing the true answers. Must include a column named "id".
+    submission : pd.DataFrame
+        A DataFrame containing the predicted answers. Must include a column named "id".
+
+    Returns:
+    float
+        The mean score computed by comparing the true answers with the predictions.
+
+    Raises:
+    AssertionError
+        If either the solution or submission DataFrame does not contain the "id" column.
+    """
+    assert "id" in solution.columns and "id" in submission.columns, "Missing 'id' column"
+    df = solution.merge(submission, on="id", how="left", suffixes=("_true", "_pred"))
+    df['score'] = df.apply(lambda row: evaluate_json(json.loads(row['answer']), row['prediction']), axis=1)
+    return df.score.mean()
+
+
+def main():
+    solution = pd.read_csv("data/competencia/solution.csv")
+    submission = pd.read_csv("data/competencia/submission.csv")
+    print(score(solution, submission))
 
 
 if __name__ == "__main__":
