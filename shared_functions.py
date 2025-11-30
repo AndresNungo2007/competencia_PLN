@@ -1,5 +1,5 @@
 import json
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 import numpy as np
 import torch
 from tqdm.auto import tqdm
@@ -207,3 +207,33 @@ def extract_json_from_text(text: str):
                         return None
 
     return None
+
+# Función para limpiar y validar los campos del JSON extraído
+def generate_json_raw(text: str, max_new_tokens: int, max_length: int, tokenizer, model, device):
+    prompt = build_prompt(text)
+    enc = tokenizer( prompt, return_tensors='pt', truncation=True, padding="longest", max_length=max_length).to(device)
+    input_ids = enc["input_ids"]
+    attention_mask = enc["attention_mask"]
+    pad_id = tokenizer.pad_token_id or tokenizer.eos_token_id    
+
+    model.eval()
+    with torch.no_grad():
+        out = model.generate( input_ids=input_ids,
+                             attention_mask=attention_mask, 
+                             max_new_tokens=max_new_tokens, 
+                             do_sample=False, 
+                             pad_token_id=pad_id, 
+                             eos_token_id=tokenizer.eos_token_id, 
+                             use_cache=True
+                            )
+
+    decoded = tokenizer.decode(out[0], skip_special_tokens=True)
+    decoded = ( decoded.replace("“", '"').replace("”", '"').replace("’", "'"))
+    #print("Raw output:", decoded)
+    
+    if "{" in decoded and "}" in decoded:
+        first = decoded.find("{")
+        last = decoded.rfind("}")
+        decoded = decoded[first : last + 1]
+
+    return decoded
