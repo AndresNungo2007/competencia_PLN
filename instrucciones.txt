@@ -1,0 +1,100 @@
+INSTRUCCIONES PARA EJECUTAR LOS NOTEBOOKS
+==============================================================================
+
+==============================================================================
+Flujo de los notebooks
+==============================================================================
+1. `train.ipynb`: genera `weights.pt`
+2. `evaluation.ipynb`
+3. `open_evaluation.ipynb`
+
+
+==============================================================================
+Pasos para ejecución `train.ipynb`
+==============================================================================
+Notas:
+La GPU utilizada fue:
+- CUDA: versión 12.8
+- Compute capability: testeado en GPU Nvidia RTX 5070 y RTX 5060ti.
+- Versión de Python usada: `3.12.12`
+
+
+1. Habilitar GPU en el entorno
+------------------------------------------------------------------------------
+En Google Colab:
+- Ir a "Entorno de ejecución" → "Cambiar tipo de entorno de ejecución"
+- Seleccionar Hardware: GPU
+
+En Coursera:
+- Activar el entorno con GPU desde el panel del curso.
+
+
+2. Instalar dependencias
+------------------------------------------------------------------------------
+Ejecutar la siguiente celda al inicio del notebook:
+
+`!pip install -r requirements.txt`
+
+Cargar los archivos en la ruta actual del notebook, de `Modulos_auxiliares.zip`, extraer los archivos .py.
+- shared_functions.py
+- clean_fields_json.py
+
+
+3. Cargar el modelo base Qwen3 + LoRA + BitsAndBytes
+------------------------------------------------------------------------------
+El notebook espera utilizar el modelo:
+
+    Qwen/Qwen3-0.6B-Base
+
+Este se descargará automáticamente desde Hugging Face.
+
+Configuración de LoRA: El notebook utiliza la clase LoraConfig desde la librería PEFT. No se requiere configuración adicional por parte del usuario.
+Cuantización con BitsAndBytes: El modelo utiliza cuantización 4-bit mediante BitsAndBytesConfig.
+Entrenamiento: El optimizador utilizado es AdamW. Todos los hiperparámetros del entrenamiento están definidos dentro del notebook.
+
+
+4. Ejecute todas las celdas del Notebook.
+------------------------------------------------------------------------------
+Configurar el directorio donde están los 9 archivos de entrenamiento. Para nuestro ejemplo, se usó esta ruta: ruta actual de este notebook + `data/train`.
+
+5. Uso final
+------------------------------------------------------------------------------
+Una vez ejecutado el notebook completo, se generará el modelo base con el ajuste aplicado con LoRA + BitsAndBytes. Resultado: el archivo `weights.pt`.
+
+
+==============================================================================
+Pasos para ejecución `evaluation.ipynb` y `open_evaluation.ipynb`
+==============================================================================
+
+1. Localizar archivo `weights.pt`
+------------------------------------------------------------------------------
+Coloque el archivo `weights.pt` en esta ruta `output/results/v11` (esto es una ruta de ejemplo, puede usar otro directorio).
+Primero debe ubicar donde se generó `weights.pt` y en la ruta actual donde está este notebook y verifique que esta ruta exista: `output/results/v11`.
+
+2. Habilitar GPU en el entorno
+------------------------------------------------------------------------------
+En Google Colab:
+- Ir a "Entorno de ejecución" → "Cambiar tipo de entorno de ejecución"
+- Seleccionar Hardware: GPU
+
+En Coursera:
+- Activar el entorno con GPU desde el panel del curso.
+
+3. Instalar dependencias
+------------------------------------------------------------------------------
+Ejecutar la siguiente celda al inicio del notebook:
+
+`!pip install -r requirements.txt`
+
+Cargar los archivos en la ruta actual del notebook, de `Modulos_auxiliares.zip`, extraer los archivos .py.
+- shared_functions.py
+- clean_fields_json.py
+
+
+4. Ejecute todas las celdas del Notebook.
+------------------------------------------------------------------------------
+Configurar el directorio donde está `eval.json`. Para nuestro ejemplo, se usó esta ruta: ruta actual de este notebook + `data/eval/eval.json`.
+
+5. Uso final
+------------------------------------------------------------------------------
+Una vez ejecutado el notebook `evaluation.ipynb` completo, se generará el archivo `submission_norm.csv` que es el archivo usado para enviar a Kaggle.
